@@ -16,8 +16,10 @@ public class Convert {
 		for (int i=0;i<s1.length();i++)
 		{
 			if (ch1[i]>='a'&&ch1[i]<='z')		//找出用户输入字符串中的小写字符
+//			if (s1.charAt(i)>='a'&&s1.charAt(i)<='z')
 			{
 				ch2[i]=(char) (ch1[i]-32);		//将小写字符转换为大写字符
+//				ch2 [i]=String.valueOf(ch2[i]).toUpperCase();	//功能同上
 			}
 		}
 		s2 = String.copyValueOf(ch2);			//字符数组转换为字符串，这样做不用遍历数组
